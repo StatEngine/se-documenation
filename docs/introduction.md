@@ -14,5 +14,5 @@ This manual is intended for current and potential StatEngine users and administr
 
 ## Getting Help
 
-If you run into problems, please check out our [FAQ] and [TROUBLESHOOTING] sections.
+If you run into problems, please check out our [FAQ](faq.md).
 If you're still having issues, contact us at StatEngine support at [contact@statengine.io](mailto://contact@statengine.io)

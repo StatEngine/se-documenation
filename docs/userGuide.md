@@ -14,8 +14,7 @@ Now that your department is onboarded, lets get started using the platform.
 
   ![signUp](assets/signUp.png)
 
-3.  At this point, your local administrator will receive notification of you pending access.  In the meantime, check out our training videos and other        
-  [resources](resources.md).
+3.  At this point, your local administrator will receive notification of you pending access.  In the meantime, check out our training videos and other [resources](resources.md).
 
 ### Dashboard
 
