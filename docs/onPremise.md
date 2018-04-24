@@ -16,17 +16,17 @@ The following prerequisites are needed
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 * [Wget or Curl](https://www.vagrantup.com/downloads.html)
 
-
 ## Quick Start
 
-### Initialize Environment
+### Download Latest Release
 
-Lets setup Vagrant and download the latest configuration.
+Lets download the latest release and add to vagrant.
 Run the following in your terminal:
 ```
 $ mkdir stat-engine
 $ cd stat-engine
-$ wget https://s3/...
+$ wget https://s3.amazonaws.com/statengine-public-artifacts/statengine-appliance-latest.box
+$ vagrant box add statengine-appliance-latest.box --name statengine/statengine-appliance
 ```
 
 ### Provisioning
@@ -34,6 +34,7 @@ $ wget https://s3/...
 It is time to boot up StatEngine.
 Run the following from your terminal:
 ```
+$ vagrant init statengine/statengine-appliance
 $ vagrant up
 ```
 This command will finish and you will have a virtual machine running StatEngine. You will not actually see anything though, since Vagrant runs the virtual machine without a UI.
@@ -58,7 +59,7 @@ This command will finish and you will have a virtual machine running StatEngine.
 
 ### Next Steps
 
-For more information on how to use StatEngine, check out our [User Guide] for more info on how to use the dashboard or checkout some of your [training videos].  
+For more information on how to use StatEngine, check out the [User Guide](userGuide.md) for more info on how to use the dashboard or checkout some of the other [resources](resources).  
 
 If you want to continue using the on-premise solution to connect and ingesting your own data, follow our advanced guides.
 
