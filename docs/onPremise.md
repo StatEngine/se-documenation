@@ -77,7 +77,7 @@ For this tutorial, we are going to write our own normalizer to ingest San Franci
 
 #### Introduction
 A *siamese* project is responsible for transforming *raw* source data into a normalized StatEngine data structures as defined by our schemas.  
-In our case, the *raw* source data is the data provided by the [DataSF](https://datasf.org/) API, but can come from any RMS or CAD export and in a variety of formats such as XML, JSON, CSV, or flat files.  
+In our case, the *raw* source data is the data provided by the [DataSF Fire Department Calls for Service Dataset](https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3), but can come from any RMS or CAD export and in a variety of formats such as XML, JSON, CSV, or flat files.  
 
 Raw fire incident data will vary from source to source, but generally we can expect the data to include geographic locations, timestamp, and other attributes such as incident number, priority level, and information on apparatus responding to the call.
 
