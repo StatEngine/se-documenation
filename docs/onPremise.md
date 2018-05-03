@@ -47,7 +47,7 @@ This command will finish and you will have a virtual machine running StatEngine.
 
 2.  Click the ```Sign In``` button on right side of the top navigation bar.  Login to the application using the following credentials
 
-  > username: ```sfDemo```
+  > username: ```sfUser```
 
   > password: ```password```
 
