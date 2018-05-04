@@ -35,9 +35,18 @@ It is time to boot up StatEngine.
 Run the following from your terminal:
 ```
 $ vagrant init statengine/statengine-appliance
+```
+
+With your favorite text editor, add this line to generated ```Vagrantfile``` within the configuration block
+```
+config.vm.network "forwarded_port", guest: 8080, host: 8080
+```
+
+Now run
+```
 $ vagrant up
 ```
-This command will finish and you will have a virtual machine running StatEngine. You will not actually see anything though, since Vagrant runs the virtual machine without a UI.
+This command will finish and you will have a virtual machine running StatEngine. You will not actually see anything though, since Vagrant runs the virtual machine without a UI.  
 
 ### Start Exploring
 
