@@ -25,7 +25,7 @@ Run the following in your terminal:
 ```
 $ mkdir stat-engine
 $ cd stat-engine
-$ wget https://s3.amazonaws.com/statengine-public-artifacts/statengine-appliance-latest.box
+$ wget https://s3.amazonaws.com/statengine-public-artifacts/statengine-latest.box
 $ vagrant box add statengine-appliance-latest.box --name statengine/statengine-appliance
 ```
 
@@ -58,7 +58,7 @@ This command will finish and you will have a virtual machine running StatEngine.
   ![dashboard](assets/dashboard.png)
 
 
-### Next Steps˝
+### Next Steps
 
 For more information on how to use StatEngine, check out the [User Guide](userGuide.md) for more info on how to use the dashboard or checkout some of the other [resources](resources).  
 
