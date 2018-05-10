@@ -52,7 +52,7 @@ The time interval that begins when the emergency response facilities (ERFs) and 
 ***Travel:***
 The time interval that begins when a unit is enroute to the emergency incident and ends when the unit arrives at the scene.
 
-<span class="formula"> turnout_duration = first_unit_arrived -  first_unit_enroute </span>
+<span class="formula"> travel_duration = first_unit_arrived -  first_unit_enroute </span>
 
 <span style="color:orange"> Note: This calculation does not imply the first unit arrived was also the first unit enroute.  It is simply the period of time before the first unit arrives after after *ANY* unit has been enroute.  Per-unit travel calculations are also calculated.</span>
 
@@ -63,7 +63,7 @@ The time interval from the receipt of the alarm at the primary PSAP to when the 
 <span class="formula"> total_respsonse_duration = first_unit_arrived -  psap_answer_time </span>
 
 <hr>
-***Total Event (Not defined by NFAP):***
+***Total Event (Not defined by NFPA):***
 The time interval from the incident creation in CAD to when the incident is closed in CAD.
 
 <span class="formula"> total_event_duration = event_closed -  event_opened </span>
