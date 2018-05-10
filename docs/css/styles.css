@@ -6,3 +6,7 @@ img[alt=departmentSummary] { width: 500px; }
 .cover-main {
   color: #C8E2FF
 }
+
+.formula {
+  font-weight: bolder
+}
