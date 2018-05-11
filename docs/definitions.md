@@ -60,7 +60,7 @@ The time interval that begins when a unit is enroute to the emergency incident a
 ***Total Response:***
 The time interval from the receipt of the alarm at the primary PSAP to when the first emergency response unit is initiating action or intervening to control the incident.
 
-<span class="formula"> total_respsonse_duration = first_unit_arrived -  psap_answer_time </span>
+<span class="formula"> total_response_duration = first_unit_arrived -  psap_answer_time </span>
 
 <hr>
 ***Total Event (Not defined by NFPA):***
