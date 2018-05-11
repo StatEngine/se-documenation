@@ -2,7 +2,7 @@
 
 Some departments calculate `response time`, `event time`, `alarm handling` or other metrics differently than others.
 To avoid confusion and to assure complete transparency, this section serves as a dictionary of common terms and calculation definitions in StatEngine.
-StatEngine, in general, follows terminology and calculations set forth in NFAP [1710](https://www.nfpa.org/Codes-and-Standards/ARCHIVED/Safer-Act-Grant/NFPA-1710)/[1720](https://www.nfpa.org/Codes-and-Standards/ARCHIVED/Safer-Act-Grant/NFPA-1720) guidelines.
+StatEngine, in general, follows terminology and calculations set forth in NFPA [1710](https://www.nfpa.org/Codes-and-Standards/ARCHIVED/Safer-Act-Grant/NFPA-1710)/[1720](https://www.nfpa.org/Codes-and-Standards/ARCHIVED/Safer-Act-Grant/NFPA-1720) guidelines.
 
 
 ## Timestamp Fields
