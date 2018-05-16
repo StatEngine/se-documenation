@@ -285,7 +285,7 @@ The following prerequisites are needed
   }
   ```
   This function implements basic mappings from raw source to the expected locations in the schema.  
-  This example is fairly straigtforward, but the normalization logic can be as advanced as you like.  
+  This example is fairly straight forward, but the normalization logic can be as advanced as you like.  
   At this point on your on!  We suggest diving into the
   demo [source](https://github.com/StatEngine/siamese-san-francisco-demo) to see some more advanced examples.
 
