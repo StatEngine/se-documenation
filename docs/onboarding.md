@@ -3,7 +3,7 @@
 The onboarding process can take a few hours to several weeks depending on the complexity, security, and resources available to support the onboarding process.  We're here to support you along the way, so please reach out to us if you need support!
 
 ### 1. Connect Your Data
-StatEngine integrates with common fire department data sources including data warehouses, Computer Aided Dispatch (CAD) systems and Records Management Systems (RMS). Multiple approaches, listed below, can be used to securely send data to StatEngine. Your department should review the various approaches and once the desired integration approach is identified, fill our our survey here.  If you're
+StatEngine integrates with common fire department data sources including data warehouses, Computer Aided Dispatch (CAD) systems and Records Management Systems (RMS). Multiple approaches, listed below, can be used to securely send data to StatEngine. Your department should review the various approaches and once the desired integration approach is identified, fill our our survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfJKbY42mFT6ZnF-ASkJUOnxcUloF-xYcCIdmKiq2XNqKQHyw/viewform).  
 
 #### Spade
 [Spade](https://statengine.io/spade), an application developed by our team, can run on your local network to read data from your local database(s) and send it to StatEngine. Spade can also be configured to run on your local network and watch a directory for CAD files and then push them to NFORS.
