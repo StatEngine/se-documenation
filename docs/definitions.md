@@ -29,15 +29,15 @@ description.event_closed | Incident is closed in CAD
 <span class="formula"> alarm_answering_duration = event_opened - psap_answer_time </span>
 
 <hr>
-***Alarm Handling:*** The time interval from the receipt of the alarm at the primary PSAP until the beginning of the transmittal of the response information via voice or electronic means to emergency response facilities (ERFs) or the emergency response units (ERUs) in the field.
-
-<span class="formula"> alarm_handling_duration = first_unit_dispatched - event_opened </span>
-
-<hr>
 ***Alarm Processing:***
 The time interval from when the alarm is acknowledged at the communication center until response information begins to be transmitted via voice or electronic means to emergency response facilities (ERFs) or the emergency response units (ERUs).  
 
-<span class="formula"> alarm_processing_duration = first_unit_dispatched - psap_answer_time </span>
+<span class="formula"> alarm_processing_duration = first_unit_dispatched - event_opened </span>
+
+<hr>
+***Alarm Handling:*** The time interval from the receipt of the alarm at the primary PSAP until the beginning of the transmittal of the response information via voice or electronic means to emergency response facilities (ERFs) or the emergency response units (ERUs) in the field.
+
+<span class="formula"> alarm_handling_duration = first_unit_dispatched - psap_answer_time </span>
 
 <hr>
 
