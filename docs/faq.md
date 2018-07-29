@@ -2,11 +2,11 @@
 
 **Who created statEngine?**
 
-StatEngine was created and is maintained by Prominent Edge. Check out prominentedge.com to find out more.
+StatEngine was created and is maintained by Prominent Edge. Check out our [homepage](https://prominentedge.com) to find out more.
 
 **Is my data secure?**
 
-Yes, all data transferred is through an encrypted HTTPS session. This is the same security that is used by your bank when you access your account online. Once, your data is on the StatEngine servers it is stored using industry best practices.
+Yes, all data transferred is through an encrypted HTTPS session. This is the same security that is used by your bank when you access your account online. Once, your data is on the StatEngine servers, it is stored using industry best practices.
 
 **What data types to you support?**
 

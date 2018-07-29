@@ -1,13 +1,5 @@
 # Resources
 
-## Training Videos
-
-> To be supplied
-
 ## Blog
 
-> To be supplied
-
-## Standards
-
-> To be supplied
+Checkout out the latest tips, tricks, and other random thoughts on our [blog](https://medium.com/statengine).

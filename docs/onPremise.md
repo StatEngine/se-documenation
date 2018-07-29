@@ -2,30 +2,30 @@
 
 ## Overview
 
-The on-premise solution is best suited if you prefer managing all aspects of data, security, and extensions of the platform yourself. The on-premise solution is also useful for experimenting with customizations, developing your own extensions, and utilizing in constrained testing environments. As things can get a bit technical, we only recommend using the on-premise method if you have skilled IT personnel available to setup and support the platform.
-
+The on-premise solution is best suited if you prefer managing all aspects of data and security of the platform yourself. The on-premise solution is also useful for experimenting with customizations or utilizing in constrained testing environments. As things can get a bit technical, we only recommend using the on-premise method if you have skilled IT personnel available to setup and support the platform.
 
 ## Prerequisites
 
 The on-premise solution is delivered in a [*.box*](https://www.vagrantup.com/docs/boxes/format.html) format.  
-Utilizing *.box* and Vagrant provisioning, the on-premise solution can run on Windows, Linux, and OS X operating systems.
+These instructions have been written and tested for OS X, but by utilizing *.box* and Vagrant provisioning, the on-premise solution should run on Windows or Linux without issue.
 
 The following prerequisites are needed
 
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* [Vagrant](https://www.vagrantup.com/downloads.html)
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (***Only Compatible with 5.1***)
+* [Vagrant](https://www.vagrantup.com/downloads.html) (***Only Compatible with 1.X***)
 * [Wget or Curl](https://www.vagrantup.com/downloads.html)
+
 
 ## Quick Start
 
 ### Download Latest Release
 
-Lets download the latest release and add to vagrant.
+Lets download the latest release and add the *.box* to Vagrant.
 Run the following in your terminal:
 ```
 $ mkdir stat-engine
 $ cd stat-engine
-$ wget https://s3.amazonaws.com/statengine-public-artifacts/statengine-latest.box
+$ wget https://s3.amazonaws.com/statengine-public-artifacts/statengine-appliance-latest.box
 $ vagrant box add statengine-appliance-latest.box --name statengine/statengine-appliance
 ```
 
@@ -50,6 +50,8 @@ This command will finish and you will have a virtual machine running StatEngine.
 
 ### Start Exploring
 
+Note: You may need to wait up to 5 minutes for everything to initialize and data to start populating.
+
 1.  Open your favorite browser (we recommend [Chrome](https://www.google.com/chrome/)) and navigate to [http://localhost:8080](http://localhost:8080).  You will see the landing page.  
 
   ![landing](assets/landing.png)
@@ -67,27 +69,31 @@ This command will finish and you will have a virtual machine running StatEngine.
   ![dashboard](assets/dashboard.png)
 
 
+### Known Issues
+
+* Incident Analysis, Twitter, and other applications are in experimental stages.  
+* Features that utilize third-party APIs such as DarkSky and Mapbox are disabled in the on-premise version.
+
 ### Next Steps
 
-For more information on how to use StatEngine, check out the [User Guide](userGuide.md) for more info on how to use the dashboard or checkout some of the other [resources](resources).  
+For more information, check out the [User Guide](userGuide.md) for more info on how to use the dashboard or checkout some of the other training [resources](resources).  
 
-If you want to continue using the on-premise solution to connect and ingesting your own data, follow our advanced guides.
+If you want to continue using the on-premise solution to connect and ingesting your own data, follow our advanced guide below.
 
 
 ## Advanced
 
-Great, you love StatEngine and you want to start consuming on your data!  This section is intended for developers who to start writing their own normalizers and
-ingesting into an On-premise instance of StatEngine.  
+Great, you love StatEngine and you want to start consuming your own data!  This section is intended for developers who to start writing their own normalizers and
+ingesting into an on-premise instance of StatEngine.  
 
 ## Tutorial - San Francisco Fire Department
 
-For this tutorial, we are going to write our own normalizer to ingest San Francisco Fire Department publicaly available at [DataSF](https://datasf.org/).  The dataset includes fire units responses to calls. Each record includes the call number, incident number, address, unit identifier, call type, and disposition. All relevant time intervals are also included. Because this dataset is based on responses, and since most calls involved multiple units, there are multiple records for each call number. Addresses are associated with a block number, intersection or call box, not a specific address.  The dataset also includes API, which will be useful for polling for recent data.
+For this tutorial, we are going to write our own normalizer to ingest San Francisco Fire Department publically available at [DataSF](https://datasf.org/).  The dataset includes fire units responses to calls. Each record includes the call number, incident number, address, unit identifier, call type, and disposition. All relevant time intervals are also included. Because this dataset is based on responses, and since most calls involved multiple units, there are multiple records for each call number. Addresses are associated with a block number, intersection or call box, not a specific address.  The dataset also includes API, which will be useful for polling for recent data.
 
 ### Part 1:  Developing your own Siamese plugin
 
 #### Introduction
-A *siamese* project is responsible for transforming *raw* source data into a normalized StatEngine data structures as defined by our schemas.  
-In our case, the *raw* source data is the data provided by the [DataSF Fire Department Calls for Service Dataset](https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3), but can come from any RMS or CAD export and in a variety of formats such as XML, JSON, CSV, or flat files.  
+A *siamese* project is responsible for transforming *raw* source data into a normalized StatEngine data structures as defined by our schemas.  In our case, the *raw* source data is the data provided by the [DataSF Fire Department Calls for Service Dataset](https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3), but can come from any RMS or CAD export and in a variety of formats such as XML, JSON, CSV, or flat files.  
 
 Raw fire incident data will vary from source to source, but generally we can expect the data to include geographic locations, timestamp, and other attributes such as incident number, priority level, and information on apparatus responding to the call.
 
@@ -289,18 +295,36 @@ The following prerequisites are needed
   At this point on your on!  We suggest diving into the
   demo [source](https://github.com/StatEngine/siamese-san-francisco-demo) to see some more advanced examples.
 
+6. To be able to use the newly create siamese-package, we need to publish to the npm registry.
+
+ ```
+ npm publish
+ ```
 
 ### Part 2:  Adding a Siamese project to Stat Engine
 
-After developing a siamese project, lets now add it to the ingest pipeline.
+The appliance already ships with the San Francicso siamese project, so let's remove it and reinstall the siamese project.
+
 On the machine running the appliance:
 
+#### Removing siamese project
 1.  ```vagrant ssh```
-2.  ```cd plugins```
-3.  ```npm install siamese-san-francisco-demo```
-4.  ```docker restart stat-engine-ingest-worker```
+2.  ```docker stop sf-demo-poller```
+3.  ```docker exec -it statengine bash```
+4.  ```rm -rf node_modules/@statengine/siamese-san-francisco-demo```
+5.  ```docker restart statengine```
+
+Now that we removed the old project, we can install a siamese project.
+#### Installing siamese project
+1.  ```vagrant ssh```
+2.  ```docker exec -it statengine bash```
+3.  ```npm install @statengine/siamese-san-francisco-demo``` This should match the name in Part 1, step 6
+4.  ```docker restart statengine```
 
 ### Part 3:  Sending data
 
-We suggest using Spade to send the raw data to StatEngine.
-Head over [here](https://statengine.io/spade) to get started sending the raw data.   
+Data is sent to StatEngine via an HTTP REST endpoint.  Spade can be utilized to send data to StatEngine or you can write a custom application such as the [sf-demo-poller](https://github.com/StatEngine/se-san-francisco-demo-poller).
+
+Lets run this poller to start sending data to StatEngine.
+1.  To test the new siamese, run ```docker start sf-demo-poller```
+2.  Verify ingest by running ```docker logs -f statengine``` and/or visiting the dashboard
