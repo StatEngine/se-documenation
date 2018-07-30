@@ -23,24 +23,17 @@ The following prerequisites are needed
 Lets download the latest release and add the *.box* to Vagrant.
 Run the following in your terminal:
 ```
-$ mkdir stat-engine
-$ cd stat-engine
-$ wget https://s3.amazonaws.com/statengine-public-artifacts/statengine-appliance-latest.box
-$ vagrant box add statengine-appliance-latest.box --name statengine/statengine-appliance
+$ mkdir stat-engine-appliance
+$ cd stat-engine-appliance
+$ wget https://s3.amazonaws.com/statengine-public-artifacts/appliance/statengine-appliance-latest.box
+$ wget https://s3.amazonaws.com/statengine-public-artifacts/appliance/Vagrantfile
+$ vagrant box add statengine-appliance-latest.box --name statengine/statengine-appliance --force
 ```
 
 ### Provisioning
 
 It is time to boot up StatEngine.
 Run the following from your terminal:
-```
-$ vagrant init statengine/statengine-appliance
-```
-
-With your favorite text editor, add this line to generated ```Vagrantfile``` within the configuration block
-```
-config.vm.network "forwarded_port", guest: 8080, host: 8080
-```
 
 Now run
 ```
