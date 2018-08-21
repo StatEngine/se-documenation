@@ -3,6 +3,7 @@
 * [User Guide](userGuide.md)
 * [Admin Guide](adminGuide.md)
 * [On-Premise Installation](onPremise.md)
+* [Email Reports](emailReports.md)
 * [Definitions](definitions.md)
 * [FAQ](faq.md)
 * [Resources](resources.md)
