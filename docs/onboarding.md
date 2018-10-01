@@ -9,7 +9,7 @@ StatEngine integrates with common fire department data sources including data wa
 
 The first question to consider is - what is your preferred data source?
 
-Consider the fields that StatEngine analyzes:
+Please consider the fields that StatEngine analyzes:
 
 ***Required***
 
@@ -54,7 +54,7 @@ Consider the fields that StatEngine analyzes:
 - RIC established time
 - Effective response force arrival time
 
-Please keep in mind, we can supplement some data if the field is not natively available in the datasource.  For example, often times with CAD integrations - we will determine response zone based on an GIS service because first due station is not set by the CAD system.  
+Please keep in mind, we can supplement some data if the field is not natively available in the datasource.  For example, often times with CAD integrations - we will determine response zone based on an GIS service because the CAD is not response zone aware.  
 
 The Pros and Cons are summarized below:
 
@@ -62,8 +62,8 @@ The Pros and Cons are summarized below:
 #### CAD
 
 ##### Pros
-- Generally the easiest/quickest to integrate with
-- Real-time analysis
+- Generally the easiest and quickest to integrate with
+- Real-time analysis and daily workflows
 
 ##### Cons
 - Personnel information generally not available.  Employees cannot track exposures as easily
@@ -84,7 +84,7 @@ The Pros and Cons are summarized below:
 
 #### Choosing an integration method
 
-The second question you need to consider is - what is the integration method?  
+The second question you should consider is - what is the integration method?  
 
 Figure 1 describes our current integration methods.
 This file can also be downloaded [here](https://s3.amazonaws.com/statengine-public-assets/NFORS_Integrations.pdf).
