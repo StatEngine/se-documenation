@@ -2,6 +2,8 @@
 
 ## Notes:
 
+- Author - joe.chop@prominentedge.com
+
 * This repository contains StatEngine production and API Documentation.
 * The documentation is powered by [docsify](https://docsify.js.org/#/).
 
