@@ -1,5 +1,14 @@
 # StatEngine Documentation
 
+## Table of Contents:
+
+   * [StatEngine Documentation](#statengine-documentation)
+      * [Notes:](#notes)
+      * [Contributing:](#contributing)
+         * [Update:](#update)
+         * [Preview:](#preview)
+         * [Deploy:](#deploy)
+
 ## Notes:
 
 - Author - joe.chop@prominentedge.com
