@@ -1,26 +1,11 @@
 # StatEngine Documentation
 
-## Table of Contents:
-
-   * [StatEngine Documentation](#statengine-documentation)
-      * [Notes:](#notes)
-      * [Contributing:](#contributing)
-         * [Update:](#update)
-         * [Preview:](#preview)
-         * [Deploy:](#deploy)
-
-## Notes:
-
-- Author - joe.chop@prominentedge.com
-
 * This repository contains StatEngine production and API Documentation.
 * The documentation is powered by [docsify](https://docsify.js.org/#/).
 
 ---
 
 ## Contributing:
-
-### Update:
 
 * Update/add markdown in ```docs``` folder
 
@@ -31,7 +16,7 @@ npm install -g docsify
 docsify serve docs
 ```
 
-* Docs are availabe at:
+* Docs can be previewed at:
 
 [http://localhost:3000/#/](http://localhost:3000/#/)
 
