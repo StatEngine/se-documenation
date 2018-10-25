@@ -93,7 +93,7 @@ This file can also be downloaded [here](https://s3.amazonaws.com/statengine-publ
 
 
 ### 2. Verify Your Data
-Once StatEngine starts receiving data, we will work with you to identify missing or erroneous data. Often times we'll need details on missing apparatus types, battalion and district mappings to enrich your data to the fullest extent.
+Once StatEngine starts receiving data, we will work with you to identify missing or erroneous data. Often times we'll need details on missing apparatus types, battalion and district mappings to enrich your data to the fullest extent.  We will verify that we are receiving all expected data, and the data matches your source (CAD or RMS).  
 
 ### 3. Access Your Data
 After data verification, we will set you up with a customized [Dashboard](userGuide?id=Dashboard) so you can start exploring your data.
