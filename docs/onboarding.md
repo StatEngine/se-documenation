@@ -98,5 +98,7 @@ Once StatEngine starts receiving data, we will work with you to identify missing
 ### 3. Access Your Data
 After data verification, we will set you up with a customized [Dashboard](userGuide?id=Dashboard) so you can start exploring your data.
 
+StatEngine also have several features outside of the Dashboard component, including Incident Analysis, Twitter, and other integrations.  Feel free to explore.  
+
 ### 4. Explore Your Data Even More
 StatEngine has even more ways to add and enrich your data via the [Marketplace](userGuide?id=Marketplace). Explore plugins and apps like adding weather, traffic, or directly tweeting stats to Twitter.
