@@ -101,4 +101,4 @@ After data verification, we will set you up with a customized [Dashboard](userGu
 StatEngine also have several features outside of the Dashboard component, including Incident Analysis, Twitter, and other integrations.  Feel free to explore.  
 
 ### 4. Explore Your Data Even More
-StatEngine has even more ways to add and enrich your data via the [Marketplace](userGuide?id=Marketplace). Explore plugins and apps like adding weather, traffic, or directly tweeting stats to Twitter.
+StatEngine has even more ways to add and enrich your data via the [Marketplace](userGuide?id=Marketplace). Explore plugins and apps like adding weather, traffic, or directly tweeting stats to Twitter.  We're always interesting in hearing more about extending your data.  Got an idea? Let us know!
