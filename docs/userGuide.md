@@ -12,7 +12,7 @@ Now that your department is onboarded, lets get started using the platform.
 
 2.  Click the ```Sign Up``` button on right side of the top navigation bar. Fill out the details, specifying the department you belong to.
 
-  ![signUp](assets/signUp.png)
+  ![signUp](assets/signup.png)
 
 3.  At this point, your local administrator will receive notification of you pending access.  In the meantime, check out our training videos and other [resources](resources.md).
 
