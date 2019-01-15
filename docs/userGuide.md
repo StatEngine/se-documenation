@@ -6,11 +6,11 @@ Now that your department is onboarded, lets get started using the platform.
 
 ### Signup
 
-1.  Open your favorite browser (we recommend [Chrome](https://www.google.com/chrome/)) and navigate to [http://localhost:8080](http://localhost:8080).  You will see the landing page.  
+1.  Open your favorite browser (we recommend [Chrome](https://www.google.com/chrome/)) and navigate to [https://statengine.io](https://statengine.io).  You will see the landing page.
 
   ![landing](assets/landing.png)
 
-2.  Click the ```Sign Up``` button on right side of the top navigation bar. Fill out the details, specifying the department you belong to.  
+2.  Click the ```Sign Up``` button on right side of the top navigation bar. Fill out the details, specifying the department you belong to.
 
   ![signUp](assets/signUp.png)
 
@@ -49,7 +49,6 @@ Perform advanced time series analysis such as averaging unit response time or vi
 Plot all incidents on a map or see where your most active and high-demand areas are.
 
   ![dashboardGraphs](assets/dashboardMap.png)
-
 
 ### Marketplace
 
