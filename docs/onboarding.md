@@ -17,7 +17,7 @@ Please consider the fields that StatEngine analyzes:
 - Incident closed time
 - Location of incident (Lat/Lon)
 - Incident type and/or subtype
-- For each apparatus on the call  
+- For each apparatus on the call
   - Dispatch time
   - Enroute time
   - Arrival time
@@ -34,7 +34,7 @@ Please consider the fields that StatEngine analyzes:
 - Priority of call
 - Flag indicating if the call is mutual aid
 - First due unit
-- For each apparatus on the call  
+- For each apparatus on the call
   - Distance from incident at dispatch time
   - Patient contact time (if applicable)
   - Transport departure time (if applicable)
@@ -54,11 +54,12 @@ Please consider the fields that StatEngine analyzes:
 - RIC established time
 - Effective response force arrival time
 
-Please keep in mind, we can supplement some data if the field is not natively available in the datasource.  For example, often times with CAD integrations - we will determine response zone based on an GIS service because the CAD is not response zone aware.  
+Please keep in mind, we can supplement some data if the field is not natively available in the datasource.  For example, often times with CAD integrations - we will determine response zone based on an GIS service because the CAD is not response zone aware.
 
 The Pros and Cons are summarized below:
 
 <hr>
+
 #### CAD
 
 ##### Pros
@@ -71,6 +72,7 @@ The Pros and Cons are summarized below:
 - Optional time fields, such as water on fire, command established, etc not available
 
 <hr>
+
 #### RMS
 
 ##### Pros
@@ -84,7 +86,7 @@ The Pros and Cons are summarized below:
 
 #### Choosing an integration method
 
-The second question you should consider is - what is the integration method?  
+The second question you should consider is - what is the integration method?
 
 Figure 1 describes our current integration methods.
 This file can also be downloaded [here](https://s3.amazonaws.com/statengine-public-assets/NFORS_Integrations.pdf).
@@ -93,12 +95,12 @@ This file can also be downloaded [here](https://s3.amazonaws.com/statengine-publ
 
 
 ### 2. Verify Your Data
-Once StatEngine starts receiving data, we will work with you to identify missing or erroneous data. Often times we'll need details on missing apparatus types, battalion and district mappings to enrich your data to the fullest extent.  We will verify that we are receiving all expected data, and the data matches your source (CAD or RMS).  
+Once StatEngine starts receiving data, we will work with you to identify missing or erroneous data. Often times we'll need details on missing apparatus types, battalion and district mappings to enrich your data to the fullest extent.  We will verify that we are receiving all expected data, and the data matches your source (CAD or RMS).
 
 ### 3. Access Your Data
 After data verification, we will set you up with a customized [Dashboard](userGuide?id=Dashboard) so you can start exploring your data.
 
-StatEngine also have several features outside of the Dashboard component, including Incident Analysis, Twitter, and other integrations.  Feel free to explore.  
+StatEngine also have several features outside of the Dashboard component, including Incident Analysis, Twitter, and other integrations.  Feel free to explore.
 
 ### 4. Explore Your Data Even More
 StatEngine has even more ways to add and enrich your data via the [Marketplace](userGuide?id=Marketplace). Explore plugins and apps like adding weather, traffic, or directly tweeting stats to Twitter.  We're always interesting in hearing more about extending your data.  Got an idea? Let us know!
