@@ -55,7 +55,7 @@ Please consider the fields that we analyze:
 - RIC established time
 - Effective response force arrival time
 
-Please keep in mind, we can supplement some data if the field is not natively available in the datasource.  For example, often times with CAD integrations - we will determine response zone based on an GIS service because the CAD is not response zone aware.
+Please keep in mind, we can supplement some data if the field is not natively available in the datasource.  For example, often times with CAD integrations - we will determine response zone based on an GIS service because the CAD is not response zone aware or hasn't been updated in years!
 
 The Pros and Cons are summarized below:
 
