@@ -1,15 +1,15 @@
 ## Overview
 
-The onboarding process can take a few hours to several weeks depending on the complexity, security, and resources available to support the onboarding process.  We're here to support you along the way, so please reach out to us if you need support!
+The onboarding process can take a few days to several weeks depending on the complexity, customer security policies, and your tech/fire resources available to support the onboarding process.  We're here to support you along the way, so please reach out to us if you need support!
 
 ### 1. Connect Your Data
-StatEngine integrates with common fire department data sources including data warehouses, Computer Aided Dispatch (CAD) systems and Records Management Systems (RMS). Multiple approaches, listed below, can be used to securely send data to StatEngine. Your department should review the various approaches and once the desired integration approach contact us to get setup.
+StatEngine, the underlying technology powering NFORS CAD, integrates with common fire department data sources including data warehouses, Computer Aided Dispatch (CAD) systems and Records Management Systems (RMS). Multiple approaches, listed below, can be used to securely send data to StatEngine. Your department should review the various approaches and once the desired integration approach contact us to get setup.  
 
 #### Choosing a data source
 
 The first question to consider is - what is your preferred data source?
 
-Please consider the fields that StatEngine analyzes:
+Please consider the fields that we analyze:
 
 ***Required***
 
@@ -17,33 +17,34 @@ Please consider the fields that StatEngine analyzes:
 - Incident closed time
 - Location of incident (Lat/Lon)
 - Incident type and/or subtype
-- For each apparatus on the call
+- For each apparatus on the incident
   - Dispatch time
   - Enroute time
   - Arrival time
   - Cleared or available time
 
-***Optional, but highly desired***
+***Optional, but HIGHLY desired***
 
 - PSAP answer time
 - Number of alarms (1 Alarm fire, 2 Alarm Fire, etc)
 - Address Information (Apt Num, Street Address, City, State, Common Name, etc)
 - First due station
+- First due unit
 - Response zone or firebox
 - Dispatch comments or narrative
-- Priority of call
-- Flag indicating if the call is mutual aid
-- First due unit
+- Priority of incident
+- Mutual aid status
+- Incident disposition
 - For each apparatus on the call
   - Distance from incident at dispatch time
   - Patient contact time (if applicable)
   - Transport departure time (if applicable)
   - Transport arrival time (if applicable)
-  - Transport destination
+  - Transport destination (if applicable)
   - Response priority
   - Personnel/employee ids of those on the apparatus
 
-***Other optional time fields***
+***Other optional operational time fields***
 - Command established time
 - Air monitoring complete time
 - LOI search complete time
@@ -67,9 +68,9 @@ The Pros and Cons are summarized below:
 - Real-time analysis and daily workflows
 
 ##### Cons
-- Personnel information generally not available.  Employees cannot track exposures as easily
-- Incident type is based on the dispatch time and not the final disposition
-- Optional time fields, such as water on fire, command established, etc not available
+- Personnel information is generally not available.  Employees can still track exposures, but will need to manually assign themselves to apparatus
+- Optional time fields, such as water on fire, command established, etc generally not available
+- Post Incident information, such as casualities, loss, not available
 
 <hr>
 
@@ -79,8 +80,8 @@ The Pros and Cons are summarized below:
 - Personnel information might be available.  Employees can easily track exposures by employee id
 
 ##### Cons
-- Analysis might not be available on a realtime basis
-- RMS interfaces are generally more difficult to export and interface with
+- Analysis usually not available in realtime.  Generally up to 24hour delay depending on customer reporting workflow
+- RMS interfaces are generally more difficult to export and interface with, requring knowledgeable customer tech personnel to help assist with integration
 
 <hr>
 
